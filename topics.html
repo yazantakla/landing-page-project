@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الدروس | CyberShield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00bcd4',
+            dark: '#0f172a',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-dark dark:text-white transition-all duration-300">
+
+  <!-- هيدر -->
+  <header class="bg-primary text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-xl font-bold">CyberShield</h1>
+      <nav class="space-x-4 space-x-reverse">
+        <a href="index.html" class="hover:underline">الرئيسية</a>
+        <a href="topics.html" class="underline">الدروس</a>
+        <a href="quiz.html" class="hover:underline">الاختبار</a>
+        <a href="contact.html" class="hover:underline">تواصل</a>
+      </nav>
+      <button id="toggle-dark" class="ml-4 bg-white text-primary px-3 py-1 rounded shadow hover:bg-gray-100">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <main class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">الدروس الأساسية</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- كرت درس -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">🔐 ما هو الأمن السيبراني؟</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+          مقدمة لفهم مفهوم الأمن السيبراني ولماذا هو مهم في العالم الرقمي.
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">اقرأ المزيد →</a>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">🎣 التصيّد الإلكتروني (Phishing)</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+          كيف يتم خداع المستخدمين للحصول على معلوماتهم الحساسة؟ مع أمثلة عملية.
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">اقرأ المزيد →</a>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">🔑 كلمات المرور القوية</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+          نصائح لإنشاء كلمات مرور قوية وصعبة الاختراق باستخدام مبادئ الأمان.
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">اقرأ المزيد →</a>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">الفريق الاحمر<br>Raed Taem</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+          شرح عن الفريق الاحمر ومهامه
+          <br>الاختلاف مع باقي الفرق
+          <br>كيفيةالبداية
+
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">اقرأ المزيد →</a>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">الفريق الازرق <br>Blue Taem</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+           شرح عن الفريق الازرق ومهامه
+          <br>الاختلاف مع باقي الفرق
+          <br>كيفيةالبداية
+
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">اقرأ المزيد →</a>
+      </div>
+
+      <!-- أضف دروساً إضافية هنا -->
+    </div>
+  </main>
+
+  <!-- فوتر -->
+  <footer class="bg-primary text-white text-center py-4">
+    <p>© 2025 CyberShield. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>

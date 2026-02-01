@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا | CyberShield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@framer/core@1.2.2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+        background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        color: white;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+         
+        }
+        
+      }
+      footer {
+        overflow: hidden;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center p-4">
+     <!-- هيدر -->
+    <header class="bg-primary text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-bold">CyberShield</h1>
+<nav class="space-x-4 space-x-reverse">
+        <a href="index.html" class="hover:underline">الرئيسية</a>
+        <a href="topics.html" class="underline">الدروس</a>
+        <a href="quiz.html" class="hover:underline">الاختبار</a>
+        <a href="contact.html" class="hover:underline">تواصل</a>
+      </nav>
+                  <button id="toggle-dark" class="ml-4 bg-white text-primary px-3 py-1 rounded shadow hover:bg-gray-100">
+                🌙
+            </button>
+        </div>
+    </header>
+    <div class="w-full max-w-md bg-white bg-opacity-10 p-6 rounded-2xl shadow-xl fade-in">
+      <h1 class="text-3xl font-bold text-center text-cyan-400 mb-6">تواصل معي</h1>
+
+      <div class="space-y-4 text-right">
+        <div class="bg-white bg-opacity-10 p-4 rounded-lg hover:bg-opacity-20 transition">
+          <p class="text-lg font-semibold text-white">📞 رقم الهاتف (واتساب وتلغرام)</p>
+          <a href="https://wa.me/00996676849" target="_blank" class="text-cyan-300 underline block">00996676849</a>
+        </div>
+
+        <div class="bg-white bg-opacity-10 p-4 rounded-lg hover:bg-opacity-20 transition">
+          <p class="text-lg font-semibold text-white">✉️ البريد الإلكتروني</p>
+          <a href="mailto:yazantakla548@gmail.com" class="text-cyan-300 underline block">yazantakla548@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center">
+        <p class="text-sm text-gray-300">أنا جاهز للرد على أي استفسار 🌟</p>
+      </div>
+    </div>
+     <footer  class="bg-primary text-white text-center py-4 " >
+        <p>© 2025 CyberShield. جميع الحقوق محفوظة.</p>
+    </footer>
+<script>
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  </body>
+</html>
